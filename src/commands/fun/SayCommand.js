@@ -7,7 +7,7 @@ module.exports = class SayCommand extends BaseCommand {
 
   async run(client, message, args) {
     const messageToSay = args.join(" ")
-    if(messageToSay) return message.channel.send("Youre message is too long, please shorten it.")
+    if(messageToSay > 200) return message.channel.send("Youre message is too long, please shorten it.")
     const sayEmbed = new Discord.MessageEmbed()
       .setTitle(`${message.author.tag} says: ${messageToSay}`)
       .setFooter(message.author.tag ,message.author.displayAvatarURL())

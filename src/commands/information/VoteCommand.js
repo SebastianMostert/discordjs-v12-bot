@@ -26,7 +26,7 @@ module.exports = class VoteCommand extends BaseCommand {
       embed.addField(`[🟢] The first option to vote`, msg.first().content)
     } catch (err) {
       console.log(err);
-      message.channel.send("You ran out of time, re-run comman.")
+      message.channel.send("You ran out of time, re-run command.")
     }
 
     message.channel.send('What is the second point to vote?');
