@@ -1,4 +1,4 @@
-# discordjs-v12-bot
+# discordjs-v12-bot (OUTDATED WILL BE UPDATED)
 
 
 # Installation & Setup
